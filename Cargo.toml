@@ -7,3 +7,12 @@ edition = "2021"
 
 [dependencies]
 actix-web = "4"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sea-orm = { version = "^0", features = [ "sqlx-postgres", "runtime-actix-rustls", "macros" ] }
+slog = "2.7.0"
+slog-async = "2.7.0"
+slog-term = "2.9.0"
+slog-json = "2.6.1"
+slog-scope = "4.4.0"
+slog-stdlog = "4.1.1"
